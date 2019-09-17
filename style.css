@@ -20,9 +20,6 @@ nav{
     font-size:1.5em;
     background-color:white;
     
-    
-    
-  
 }
 nav ul li{
     display:inline;
@@ -36,6 +33,11 @@ nav ul li a{
 }
 a{
     color: var(--secondary-color);
+    text-decoration: none;
+    
+}
+a:hover{
+    opacity:.8;
 }
 #contact{
     width:70%;
