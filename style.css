@@ -36,8 +36,8 @@ a{
     text-decoration: none;
     
 }
-a:hover{
-    opacity:.8;
+a div:hover{
+    opacity:.85;
 }
 #contact{
     width:70%;
