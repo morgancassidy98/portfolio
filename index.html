@@ -6,22 +6,56 @@
         </title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" href="../min420/1x/logo_main.png" />
-        <link rel="icon" 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="icon" 
       type="image/png" 
-      href="logo_main_small.png">
+      href="../min420/1x/logo_main_small.png">
+
 
     </head>
 <body>
-  <div id="homeTitle">Website coming very soon!
+  
 
-    <a href="https://www.linkedin.com/in/cassidy-s-morgan/"><div class="goToPortfolio">LinkedIn</div></a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="web-design.html">Web Design</a></li>
+            <li><a href="film-photo.html">Film & Photography</a></li>
+            <li><a href="graphic-design.html">Graphic Design</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+    </nav>
+    
 
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/cassidy-s-morgan/"><img class="social-img" src="linkedinlogo.png"></a>
+        <a href="https://github.com/morgancassidy98"><img class="social-img" src="25231.png"></a>
+        <a href="https://codepen.io/cassidymorgan"><img class="social-img" src="Button-Fill-Black-Large.png"></a>
+      
   </div>
 
- 
-    <canvas id="world"></canvas>
+
+
+
+<div class="projects">
+    <a href="web-design.html"><div class="project"><i class="material-icons">
+      computer
+      </i>Web</div></a>
+    <a href="film-photo.html"><div class="project"><i class="material-icons">
+      movie
+      </i>Film/Photo</div></a>
+    <a href="graphic-design.html"><div class="project"><i class="material-icons">
+      photo_size_select_large
+      </i>Graphic Design</div></a>
     
+    
+    </div>
+    <canvas id="world"></canvas>
+    <footer>Cassidy Morgan | 2019</footer>
+  
     <script>
         (function() {
   var COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, i, range, resizeWindow, xpos;
