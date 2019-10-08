@@ -19,7 +19,7 @@ body{
     background:linear-gradient(
         rgba(133, 208, 203, 0.45), 
         rgba(133, 208, 203, 0.45)
-      ),url(markus-spiske-qjnAnF0jIGk-unsplash.jpg);
+      ),url("images/markus-spiske-qjnAnF0jIGk-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Montserrat", sans-serif;
