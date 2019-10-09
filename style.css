@@ -8,12 +8,16 @@
 }
 
 
+
 body{
     background-color:var(--main-color);
-    
     font-family: "Montserrat", sans-serif;
+   
+  
+   
 
 }
+
 .home{
     background-color:var(--main-color);
     background:linear-gradient(
@@ -22,7 +26,10 @@ body{
       ),url("images/markus-spiske-qjnAnF0jIGk-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    height:100vh;
     font-family: "Montserrat", sans-serif;
+    height: 100vw;
+    overflow: hidden;
 
 }
 h2{
@@ -76,6 +83,11 @@ nav .current a{
 a div:hover{
     opacity:.85;
 }
+.home footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 footer{
     bottom: 0;
@@ -128,10 +140,15 @@ footer{
     background-color:white;
     border-radius:10px;
     font-size:1em !important;
-    padding-top:1em;
+    padding:1em;
+    
 }
 .project-card p{
     margin:1em;
+    font-size:1em;
+}
+.project-card h2{
+    font-size:2em;
 }
 .web-projects, .film-projects{
     margin:1em;
@@ -233,7 +250,7 @@ footer{
 .intro{
     font-size:3em;
     text-align: center;
-    margin: 2em;
+    margin: 1em 2em;
     background-color:var(--bonus-color);
     padding: .25em;
     border-radius:5px;
