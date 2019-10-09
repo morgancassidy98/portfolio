@@ -28,7 +28,6 @@ body{
     background-repeat: no-repeat;
     height:100vh;
     font-family: "Montserrat", sans-serif;
-    height: 100vw;
     overflow: hidden;
 
 }
@@ -42,7 +41,7 @@ h2{
 
 nav ul{
   list-style-type: none;
-  margin: -.5em;
+  margin: 0em;
   padding: 0;
   overflow: hidden;
   background-color:white;
