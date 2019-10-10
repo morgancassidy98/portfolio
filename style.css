@@ -21,8 +21,8 @@ body{
 .home{
     background-color:var(--main-color);
     background:linear-gradient(
-        rgba(133, 208, 203, 0.45), 
-        rgba(133, 208, 203, 0.45)
+        rgba(76, 55, 62, 0.85), 
+        rgba(76, 55, 62, 0.85)
       ),url("images/markus-spiske-qjnAnF0jIGk-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,6 +30,9 @@ body{
     font-family: "Montserrat", sans-serif;
     overflow: hidden;
 
+}
+.home .intro h2{
+    color:white;
 }
 h2{
     font-weight:bold;
@@ -185,6 +188,10 @@ footer{
     font-style:italic;
     font-size:1.3em;
     background-color: var(--secondary-color);
+    color:white;
+    padding:0em .5em;
+   
+    border-radius:10px;
 }
 
 .form {
