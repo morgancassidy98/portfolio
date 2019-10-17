@@ -13,6 +13,7 @@
     </head>
 <body>
     <nav>
+            <div class="open-menu-section"><i class="fas fa-bars open-menu"></i></div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -42,8 +43,36 @@
     <div class="web-project"><a href="https://www.nku.edu/cai-dev/student-jobs.html">Student Jobs Directory</a></div>
     </div>
     <footer>Cassidy Morgan | <script type="text/javascript"> document.write("Page was last modified on: " + document.lastModified);</script></footer>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
     <script>
+         $(document).ready(function(){
+        $( ".open-menu" ).click(function() {
+          $(".open-menu-section").css("display","none");
+         $( "nav ul" ).toggle();
+         
+    });
+    $(".close-menu").click(function(){
+      $(".open-menu-section").css("display","block");
+      $("nav ul").toggle();
+
+    });
+    var width = $(window).width(); 
+    var height = $(window).height(); 
+
+    if(width <= 768){
+      $("nav ul").toggle();
+      console.log(width);
+    }
+    else{
+      $("nav ul").show();
+    }
+
+ 
+
+
+
+});
     </script>
 </body>
 </html>
