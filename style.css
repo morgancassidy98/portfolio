@@ -324,7 +324,7 @@ footer{
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1041px) {
     .intro{
         font-size:1em;
         text-align:center;
