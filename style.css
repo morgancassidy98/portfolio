@@ -28,7 +28,7 @@ body{
     background-repeat: no-repeat;
     height:100vh;
     font-family: "Montserrat", sans-serif;
-    overflow: hidden;
+   
 
 }
 .home .intro h2{
@@ -86,9 +86,9 @@ a div:hover{
     opacity:.85;
 }
 .home footer{
-    position: absolute;
+   /* position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100%;*/
 }
 
 footer{
@@ -376,8 +376,9 @@ footer{
     footer{
         position: unset;
     }
-    body{
-        overflow: unset;
+    .home{
+        height: 200%;
+        
     }
     }
 
