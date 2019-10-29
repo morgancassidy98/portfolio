@@ -415,6 +415,27 @@ footer{
     iframe{
         width:100%;
     }
+    .project i{
+        font-size:2em;
+        color:white;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .project{
+       
+        margin-top:3em;
+        background-color:var(--bonus-color);
+        width:11vw;
+        height:11vw;
+       
+        border-radius:100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+   
     }
 
 
