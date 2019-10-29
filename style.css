@@ -380,6 +380,41 @@ footer{
         height: 200%;
         
     }
+    .project-card{
+        margin: auto;
+        width:90vw;
+        height:40vh;
+        margin-bottom:1em;
+        
+        
+    }
+    
+    
+    .web-project, .film-project{
+        width:100%;
+        background-color:white;
+        border-radius: 10px;
+        margin: auto;
+        
+    
+    
+    }
+    .web-projects p, .film-projects p{
+        width: 100%;
+        font-size: 1.5em;
+        margin: auto;
+        margin-top:1em;
+        margin-bottom:1em;
+    }
+    .section-title{
+        margin: auto;
+        width:90%;
+        margin-top:1em;
+        
+    }
+    iframe{
+        width:100%;
+    }
     }
 
 
