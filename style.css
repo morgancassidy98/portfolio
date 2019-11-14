@@ -7,8 +7,6 @@
 
 }
 
-
-
 body {
     background-color: var(--main-color);
     font-family: "Montserrat", sans-serif;
@@ -85,12 +83,6 @@ nav .current a {
 
 a div:hover {
     opacity: .85;
-}
-
-.home footer {
-    /* position: absolute;
-    bottom: 0;
-    width: 100%;*/
 }
 
 footer {
@@ -292,6 +284,8 @@ footer {
     margin-top: 2em;
 }
 
+
+
 /**mobile navigation **/
 
 .open-menu {
@@ -441,9 +435,6 @@ footer {
         background-color: white;
         border-radius: 10px;
         margin: auto;
-
-
-
     }
 
     .web-projects p,
@@ -479,7 +470,6 @@ footer {
         background-color: var(--bonus-color);
         width: 11vw;
         height: 11vw;
-
         border-radius: 100%;
         margin: auto;
         display: flex;
@@ -489,6 +479,18 @@ footer {
 
     .about-info {
         display: block;
+    }
+
+    .graphics {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+    }
+
+    .graphics img {
+        width: 100%;
+        margin: .5em;
     }
 
 }
