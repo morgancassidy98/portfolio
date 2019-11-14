@@ -1,80 +1,87 @@
 <!doctype html>
 <html>
-    <head>
-        <title>
-            Cassidy Morgan
-        </title>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
-        <link rel="icon" 
-      type="image/png" 
-      href="images/Artboard 1 copy 15.png">
-    </head>
-<body >
-    <nav>
-            <div class="open-menu-section"><i class="fas fa-bars open-menu"></i></div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="about.html">About</a></li>
-            <li><a href="web-design.html">Web Design</a></li>
-            <li><a href="film-photo.html">Film & Photography</a></li>
-            <li><a href="graphic-design.html">Graphic Design</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="close-menu"><a href="#"><i class="fas fa-times"></i></a></li>
-            <div class="social-media">
-                    <a class="social-media-link" href="https://www.linkedin.com/in/cassidy-s-morgan/"><i class="fab fa-linkedin-in" ></i> </a>
-                    <a class="social-media-link" href="https://github.com/morgancassidy98"><i class="fab fa-github"></i></a>
-                    <a class="social-media-link" href="https://codepen.io/cassidymorgan"><i class="fab fa-codepen"></i></a>
-                   
-               </div>
-        </ul>
-    </nav>
-    <div class="main-content">
-<div id="about-header">
-    
-        <h2 class="intro about">Cassidy Morgan</h2>
-     </div>
-   
-   <div class="about-info">
-        <img class="profile-pic" src="images/31189994_430797454033797_6138327621190025216_n.jpg">
-       
-       I am a Northern Kentucky University student majoring in Media Informatics, with a minor in Computer Science and Electronic Media & Broadcasting.
-      
-       I've had the pleasure to work on several websites for NKU. I also have experience managing the Community Mental Health Centers of Kentucky social media.
 
-       I love learning, and I am always down to learn new coding languages or technologies!
+<head>
+  <title>
+    Cassidy Morgan
+  </title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/Artboard 1 copy 15.png">
+</head>
 
-       In my free time I enjoy watching Netflix, playing music, and hanging out with family and friends.
-       </div>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
- 
+<body>
+  <nav>
+    <div class="open-menu-section"><i class="fas fa-bars open-menu"></i></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="current"><a href="about.html">About</a></li>
+      <li><a href="web-design.html">Web Design</a></li>
+      <li><a href="film-photo.html">Film & Photography</a></li>
+      <li><a href="graphic-design.html">Graphic Design</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="close-menu"><a href="#"><i class="fas fa-times"></i></a></li>
+      <div class="social-media">
+        <a class="social-media-link" href="https://www.linkedin.com/in/cassidy-s-morgan/"><i
+            class="fab fa-linkedin-in"></i> </a>
+        <a class="social-media-link" href="https://github.com/morgancassidy98"><i class="fab fa-github"></i></a>
+        <a class="social-media-link" href="https://codepen.io/cassidymorgan"><i class="fab fa-codepen"></i></a>
+
+      </div>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div id="about-header">
+
+      <h2 class="intro about">Cassidy Morgan</h2>
+    </div>
+
+    <div class="about-info">
+      <img class="profile-pic" src="images/31189994_430797454033797_6138327621190025216_n.jpg">
+
+      I am a Northern Kentucky University student majoring in Media Informatics, with a minor in Computer Science and
+      Electronic Media & Broadcasting.
+
+      I've had the pleasure to work on several websites for NKU. I also have experience managing the Community Mental
+      Health Centers of Kentucky social media.
+
+      I love learning, and I am always down to learn new coding languages or technologies!
+
+      In my free time I enjoy watching Netflix, playing music, and hanging out with family and friends.
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <script>
-         $(document).ready(function(){
-        $( ".open-menu" ).click(function() {
-          $(".open-menu-section").css("display","none");
-         $( "nav ul" ).toggle();
-         
-    });
-    $(".close-menu").click(function(){
-      $(".open-menu-section").css("display","block");
-      $("nav ul").toggle();
+      $(document).ready(function () {
 
-    });
-    var width = $(window).width(); 
-    var height = $(window).height(); 
+        $(window).resize(function () {
+          if ($(window).width() < 1041) {
+            $(".open-menu").click(function () {
+              $(".open-menu-section").css("display", "none");
+              $("nav ul").show();
 
-    if(width <= 768){
-      $("nav ul").toggle();
-      console.log(width);
-    }
-    else{
-      $("nav ul").show();
-    }
+            });
+            $(".close-menu").click(function () {
+              $(".open-menu-section").css("display", "block");
+              $("nav ul").hide();
+            });
 
- });
-    
-    
+          } else {
+            $("nav ul").show();
+          }
+        });
+
+
+
+
+
+
+
+
+
+      });
     </script>
 </body>
+
 </html>

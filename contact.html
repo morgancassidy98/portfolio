@@ -1,66 +1,73 @@
 <!doctype html>
 <html>
-    <head>
-        <title>
-            Cassidy Morgan
-        </title>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
-        <link rel="icon" 
-      type="image/png" 
-      href="images/Artboard 1 copy 15.png">
-    </head>
+
+<head>
+  <title>
+    Cassidy Morgan
+  </title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/Artboard 1 copy 15.png">
+</head>
+
 <body>
-    <nav>
-            <div class="open-menu-section"><i class="fas fa-bars open-menu"></i></div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="web-design.html">Web Design</a></li>
-            <li><a href="film-photo.html">Film & Photography</a></li>
-            <li><a href="graphic-design.html">Graphic Design</a></li>
-            <li class="current"><a href="contact.html">Contact</a></li>
-            <li class="close-menu"><a href="#"><i class="fas fa-times"></i></a></li>
-            <div class="social-media">
-                    <a class="social-media-link" href="https://www.linkedin.com/in/cassidy-s-morgan/"><i class="fab fa-linkedin-in" ></i> </a>
-                    <a class="social-media-link" href="https://github.com/morgancassidy98"><i class="fab fa-github"></i></a>
-                    <a class="social-media-link" href="https://codepen.io/cassidymorgan"><i class="fab fa-codepen"></i></a>
-                   
-               </div>
-        </ul>
-    </nav>
-            <div class="form">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeecmFR7IOU17ecqwjo5lrpMmA9WK-YQL7Kjt237fOPhWa_gg/viewform?embedded=true" width="640" height="930" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
- 
-    <script>
-         $(document).ready(function(){
-        $( ".open-menu" ).click(function() {
-          $(".open-menu-section").css("display","none");
-         $( "nav ul" ).toggle();
-         
-    });
-    $(".close-menu").click(function(){
-      $(".open-menu-section").css("display","block");
-      $("nav ul").toggle();
+  <nav>
+    <div class="open-menu-section"><i class="fas fa-bars open-menu"></i></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="web-design.html">Web Design</a></li>
+      <li><a href="film-photo.html">Film & Photography</a></li>
+      <li><a href="graphic-design.html">Graphic Design</a></li>
+      <li class="current"><a href="contact.html">Contact</a></li>
+      <li class="close-menu"><a href="#"><i class="fas fa-times"></i></a></li>
+      <div class="social-media">
+        <a class="social-media-link" href="https://www.linkedin.com/in/cassidy-s-morgan/"><i
+            class="fab fa-linkedin-in"></i> </a>
+        <a class="social-media-link" href="https://github.com/morgancassidy98"><i class="fab fa-github"></i></a>
+        <a class="social-media-link" href="https://codepen.io/cassidymorgan"><i class="fab fa-codepen"></i></a>
+
+      </div>
+    </ul>
+  </nav>
+  <div class="form">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSeecmFR7IOU17ecqwjo5lrpMmA9WK-YQL7Kjt237fOPhWa_gg/viewform?embedded=true"
+      width="640" height="930" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      $(window).resize(function () {
+        if ($(window).width() < 1041) {
+          $(".open-menu").click(function () {
+            $(".open-menu-section").css("display", "none");
+            $("nav ul").show();
+
+          });
+          $(".close-menu").click(function () {
+            $(".open-menu-section").css("display", "block");
+            $("nav ul").hide();
+          });
+
+        } else {
+          $("nav ul").show();
+        }
+      });
+
+
+
+
+
+
+
+
 
     });
-    var width = $(window).width(); 
-    var height = $(window).height(); 
-
-    if(width <= 768){
-      $("nav ul").toggle();
-      console.log(width);
-    }
-    else{
-      $("nav ul").show();
-    }
-
- });
-    </script>
+  </script>
 </body>
+
 </html>
-
-

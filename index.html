@@ -19,9 +19,9 @@
  <div class="wrapper">
 <body class="home">
   
-
+  <div class="open-menu-section"><i class="fas fa-bars open-menu"></i></div>
     <nav>
-        <div class="open-menu-section"><i class="fas fa-bars open-menu"></i></div>
+        
        
         <ul>
             <li class="current"><a href="index.html">Home</a></li>
@@ -64,29 +64,37 @@
  
     
   <script>
-      $(document).ready(function(){
-        $( ".open-menu" ).click(function() {
-          $(".open-menu-section").css("display","none");
-         $( "nav ul" ).toggle();
-         
-    });
-    $(".close-menu").click(function(){
-      $(".open-menu-section").css("display","block");
-      $("nav ul").toggle();
+     
+     $(document).ready(function(){
 
-    });
-    var width = $(window).width(); 
-    var height = $(window).height(); 
+$(window).resize(function() {
+if ($(window).width() < 1041) {
+$( ".open-menu" ).click(function() {
+  $(".open-menu-section").css("display","none");
+ $( "nav ul" ).show();
+ 
+});
+$(".close-menu").click(function(){
+$(".open-menu-section").css("display","block");
+$("nav ul").hide();
+});
 
-    if(width <= 768){
-      $("nav ul").toggle();
-      console.log(width);
-    }
-    else{
-      $("nav ul").show();
-    }
+}
+else {
+$("nav ul").show();
+}
+});
 
- });
+
+
+
+
+
+
+
+
+});
+
 
 var snowStorm = (function(window, document) {
 

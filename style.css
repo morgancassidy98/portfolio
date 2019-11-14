@@ -131,7 +131,6 @@ footer{
 .project-card{
     margin: 1em;
     width:25vw;
-    height:40vh;
     background-color:white;
     border-radius:10px;
     font-size:1em !important;
@@ -139,8 +138,8 @@ footer{
     
 }
 .project-card p{
-    margin:1em;
-    font-size:1em;
+    margin:.5em;
+    font-size:1.5em;
 }
 .project-card h2{
     font-size:2em;
