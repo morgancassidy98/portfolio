@@ -4,6 +4,7 @@
         <title>
             Cassidy Morgan
         </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -65,35 +66,29 @@
     
   <script>
      
-     $(document).ready(function(){
+     $(document).ready(function () {
+      $(".open-menu").click(function () {
+        $(".open-menu-section").css("display", "none");
+        $("nav ul").show();
 
-$(window).resize(function() {
-if ($(window).width() < 1041) {
-$( ".open-menu" ).click(function() {
-  $(".open-menu-section").css("display","none");
- $( "nav ul" ).show();
- 
-});
-$(".close-menu").click(function(){
-$(".open-menu-section").css("display","block");
-$("nav ul").hide();
-});
+      });
+      $(".close-menu").click(function () {
 
-}
-else {
-$("nav ul").show();
-}
-});
+        $(".open-menu-section").css("display", "block");
 
+        $("nav ul").hide();
+      });
 
+      $(window).resize(function () {
+        if ($(window).width() >= 1041) {
 
-
-
-
-
-
-
-});
+          $("nav ul").show();
+        } else {
+          $("nav ul").hide();
+          $(".open-menu-section").css("display", "block");
+        }
+      });
+    });
 
 
 var snowStorm = (function(window, document) {

@@ -5,6 +5,7 @@
   <title>
     Cassidy Morgan
   </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
@@ -53,32 +54,27 @@
 
   <script>
     $(document).ready(function () {
+      $(".open-menu").click(function () {
+        $(".open-menu-section").css("display", "none");
+        $("nav ul").show();
 
-      $(window).resize(function () {
-        if ($(window).width() < 1041) {
-          $(".open-menu").click(function () {
-            $(".open-menu-section").css("display", "none");
-            $("nav ul").show();
+      });
+      $(".close-menu").click(function () {
 
-          });
-          $(".close-menu").click(function () {
-            $(".open-menu-section").css("display", "block");
-            $("nav ul").hide();
-          });
+        $(".open-menu-section").css("display", "block");
 
-        } else {
-          $("nav ul").show();
-        }
+        $("nav ul").hide();
       });
 
+      $(window).resize(function () {
+        if ($(window).width() >= 1041) {
 
-
-
-
-
-
-
-
+          $("nav ul").show();
+        } else {
+          $("nav ul").hide();
+          $(".open-menu-section").css("display", "block");
+        }
+      });
     });
   </script>
 </body>

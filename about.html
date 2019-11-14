@@ -5,6 +5,7 @@
   <title>
     Cassidy Morgan
   </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
@@ -40,46 +41,42 @@
     <div class="about-info">
       <img class="profile-pic" src="images/31189994_430797454033797_6138327621190025216_n.jpg">
 
-      I am a Northern Kentucky University student majoring in Media Informatics, with a minor in Computer Science and
-      Electronic Media & Broadcasting.
+      <p>I am a Northern Kentucky University student majoring in Media Informatics, with a minor in Computer Science and
+        Electronic Media & Broadcasting.
 
-      I've had the pleasure to work on several websites for NKU. I also have experience managing the Community Mental
-      Health Centers of Kentucky social media.
+        I've had the pleasure to work on several websites for NKU. I also have experience managing the Community Mental
+        Health Centers of Kentucky social media.
 
-      I love learning, and I am always down to learn new coding languages or technologies!
+        I love learning, and I am always down to learn new coding languages or technologies!
 
-      In my free time I enjoy watching Netflix, playing music, and hanging out with family and friends.
+        In my free time I enjoy watching Netflix, playing music, and hanging out with family and friends.
+      </p>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script>
       $(document).ready(function () {
+        $(".open-menu").click(function () {
+          $(".open-menu-section").css("display", "none");
+          $("nav ul").show();
 
-        $(window).resize(function () {
-          if ($(window).width() < 1041) {
-            $(".open-menu").click(function () {
-              $(".open-menu-section").css("display", "none");
-              $("nav ul").show();
+        });
+        $(".close-menu").click(function () {
 
-            });
-            $(".close-menu").click(function () {
-              $(".open-menu-section").css("display", "block");
-              $("nav ul").hide();
-            });
+          $(".open-menu-section").css("display", "block");
 
-          } else {
-            $("nav ul").show();
-          }
+          $("nav ul").hide();
         });
 
+        $(window).resize(function () {
+          if ($(window).width() >= 1041) {
 
-
-
-
-
-
-
-
+            $("nav ul").show();
+          } else {
+            $("nav ul").hide();
+            $(".open-menu-section").css("display", "block");
+          }
+        });
       });
     </script>
 </body>
