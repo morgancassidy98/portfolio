@@ -284,6 +284,13 @@ footer {
     margin-top: 2em;
 }
 
+.photography-page {
+
+    color: black;
+    font-size: 1.5em;
+    font-style: italic;
+
+}
 
 
 /**mobile navigation **/
@@ -483,6 +490,7 @@ footer {
 
     .graphics img {
         width: 90%;
+
 
     }
 
