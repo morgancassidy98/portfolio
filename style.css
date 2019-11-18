@@ -386,6 +386,8 @@ footer {
     .social-media-mobile {
         display: inline;
         margin-bottom: 2em;
+        display: flex;
+        
 
     }
 
@@ -396,6 +398,12 @@ footer {
     .social-media-mobile i:hover {
         color: black;
         cursor: pointer;
+    }
+    .social-media-link {
+        margin: .25em;
+        font-size: 1em;
+    
+        
     }
 
     nav ul {
