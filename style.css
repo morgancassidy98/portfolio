@@ -384,7 +384,7 @@ footer {
     }
 
     .social-media-mobile {
-        display: block;
+        display: inline;
         margin-bottom: 2em;
 
     }
@@ -469,14 +469,15 @@ footer {
         color: white;
         text-align: center;
         margin: auto;
+        
     }
 
     .project {
 
         margin-top: 3em;
         background-color: var(--bonus-color);
-        width: 11vw;
-        height: 11vw;
+        width: 14vw;
+        height: 14vw;
         border-radius: 100%;
         margin: auto;
         display: flex;
