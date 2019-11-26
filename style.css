@@ -69,20 +69,20 @@ a {
 
 nav ul li:hover {
     background-color: var(--tertiary-color);
-    color: white;
+    color: black;
 }
 
 nav ul li a:hover {
-    color: white;
+    color: black;
 }
 
 nav .current {
     background-color: var(--tertiary-color);
-    color: white;
+    color: black;
 }
 
 nav .current a {
-    color: white;
+    color: black;
 }
 
 a div:hover {
@@ -97,7 +97,7 @@ footer {
     text-align: center;
     padding: 2em 0em;
     background-color: var(--secondary-color);
-    color: white;
+    color: black;
 
 }
 
