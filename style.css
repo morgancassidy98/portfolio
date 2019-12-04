@@ -432,6 +432,9 @@ footer {
     footer {
         position: unset;
     }
+    .home-footer{
+        position: unset;
+    }
 
     .home {
         height: 200%;
