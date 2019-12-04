@@ -101,6 +101,10 @@ footer {
     color: black;
 
 }
+.home-footer{
+    position: absolute;
+    width:100%;
+}
 
 .projects {
     display: flex;
