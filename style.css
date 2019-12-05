@@ -507,7 +507,7 @@ footer {
     }
 
     .graphics img {
-        width: 560px;
+        width: 100%;
         height: auto;
         max-width: 100%;
 
