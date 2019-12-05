@@ -38,15 +38,15 @@
       practice creating logos.</p>
 
     <div class="graphics">
-      <img src="images/saltyourgreens.png" alt="Salt Your Greens Graphic">
-      <img src="images/kca.png" alt="KCA graphic">
-      <img src="images/cmhk1.png" alt="community mental health graphic">
-      <img src="images/cmhk2.png" alt="community mental health graphic">
-      <img src="images/cmhk3.png" alt="community mental health graphic">
-      <img src="images/cmhk4.png" alt="community mental health graphic">
-      <img src="images/cmhk5.png" alt="community mental health graphic">
-      <img src="images/logo2.png" style="width:50%" alt="savory scoops logo version 1">
-      <img src="images/Morgan6Logos.png" style="width:100%" alt="savory scoops logo version 2 in 6 color schemes">
+      <img data-enlargable src="images/saltyourgreens.png" alt="Salt Your Greens Graphic" style="cursor: zoom-in">
+      <img data-enlargable src="images/kca.png" alt="KCA graphic" style="cursor: zoom-in">
+      <img data-enlargable src="images/cmhk1.png" alt="community mental health graphic" style="cursor: zoom-in">
+      <img data-enlargable src="images/cmhk2.png" alt="community mental health graphic" style="cursor: zoom-in">
+      <img data-enlargable src="images/cmhk3.png" alt="community mental health graphic" style="cursor: zoom-in">
+      <img data-enlargable src="images/cmhk4.png" alt="community mental health graphic" style="cursor: zoom-in">
+      <img data-enlargable src="images/cmhk5.png" alt="community mental health graphic" style="cursor: zoom-in">
+      <img data-enlargable src="images/logo2.png" style="width:50%" alt="savory scoops logo version 1" style="cursor: zoom-in">
+      <img  data-enlargable src="images/Morgan6Logos.png" style="width:100%" alt="savory scoops logo version 2 in 6 color schemes" style="cursor: zoom-in">
 
 
     </div>
@@ -78,6 +78,20 @@
           $(".open-menu-section").css("display", "block");
         }
       });
+      $('img[data-enlargable]').addClass('img-enlargable').click(function(){
+    var src = $(this).attr('src');
+    $('<div>').css({
+        background: 'RGBA(0,0,0,.5) url('+src+') no-repeat center',
+        backgroundSize: 'contain',
+        width:'100%', height:'100%',
+        position:'fixed',
+        zIndex:'10000',
+        top:'0', left:'0',
+        cursor: 'zoom-out'
+    }).click(function(){
+        $(this).remove();
+    }).appendTo('body');
+});
     });
   </script>
 </body>
