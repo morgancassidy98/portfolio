@@ -1,71 +1,114 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico?">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+    <title>Cassidy Morgan Thorp - Contact</title>
+  </head>
+  <body>
+    <div class="container">
+      
+      <nav class="navbar navbar-expand-sm ">
+          <!-- Brand/logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo_cm.PNG" alt="logo" style="width:60px;">
+          </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+          <!-- Links -->
+           <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link btn btn-outline-primary badge-pill mr-3 px-4" href="resume.html">Resume</a></li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-primary badge-pill px-4  mr-3 active" href="contact.html">Contact</a>
+            </li>
+            
+          </ul>
+          </div>
+        </nav>
 
-<head>
-  <title>
-    Cassidy Morgan
-  </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
-  <link rel="icon" type="image/png" href="images/Artboard 1 copy 15.png">
-</head>
+        <h1 class="text-center mb-5">Contact Me</h1>
+        
 
-<body>
-  <nav>
-    <div class="open-menu-section"><i class="fas fa-bars open-menu"></i></div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="web-design.html">Web Design</a></li>
-      <li><a href="film-photo.html">Film & Photography</a></li>
-      <li><a href="graphic-design.html">Graphic Design</a></li>
-      <li class="current"><a href="contact.html">Contact</a></li>
-      <li class="close-menu"><a href="#"><i class="fas fa-times"></i></a></li>
-      <div class="social-media">
-        <a class="social-media-link" href="https://www.linkedin.com/in/cassidy-s-morgan/"><i
-            class="fab fa-linkedin-in"></i> <div class="hidden">LinkedIn</div></a>
-        <a class="social-media-link" href="https://github.com/morgancassidy98"><i class="fab fa-github"></i><div class="hidden">GitHub</div></a>
-        <a class="social-media-link" href="https://codepen.io/cassidymorgan"><i class="fab fa-codepen"></i><div class="hidden">Codepen</div></a>
 
-      </div>
-    </ul>
-  </nav>
-  <h1 class="intro">Contact </h1>
-  <div class="form">
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSeecmFR7IOU17ecqwjo5lrpMmA9WK-YQL7Kjt237fOPhWa_gg/viewform?embedded=true"
-      width="640" height="930" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <form class="w-75 mx-auto" action="https://formspree.io/f/mjvdwnrd" method="POST">
+          <p >Please provide your name, email address, and a short message about your project and I will get back to you shortly!</p>
+          <label for="Name" class="label">Name:</label>
+          <div class="input-group">
+              <input type="text" id="Name" name="Name" class="form-control" required>
+          </div>
+        <div class="form-group">
+          <label for="Email" class="label">Email:</label>
+          <div class="input-group">
+              <input type="email" id="Email" name="Email" class="form-control" required>
+          </div>
+        <div class="form-group">
+          <label for="Message" class="label">Message:</label>
+          <div class="input-group">
+              <textarea id="Message" name="Message" class="form-control" rows="6" maxlength="3000" required></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="button" class="btn btn-outline-primary badge-pill px-4">Send</button>
+        </div>
+        </form>
+
+       
+</div>
+</div>
+<footer class="bg-light text-center text-white mt-5">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+
+      <!-- Linkedin -->
+      <a
+        class="btn text-white btn-floating btn-circle m-1"
+        style="background-color: #0082ca;"
+        href="https://www.linkedin.com/in/cassidy-morgan-thorp"
+        role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn text-white btn-floating btn-circle m-1"
+        style="background-color: #333333;"
+        href="https://github.com/morgancassidy98"
+        role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    
+    <!-- Section: Social media -->
   </div>
-  <footer > Cassidy Morgan | 2019</footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Grid container -->
 
-  <script>
-    $(document).ready(function () {
-      $(".open-menu").click(function () {
-        $(".open-menu-section").css("display", "none");
-        $("nav ul").show();
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.9);">
+    © 2026 Copyright:
+    Cassidy Morgan Thorp
+  </div>
+  <!-- Copyright -->
+</footer>
 
-      });
-      $(".close-menu").click(function () {
-
-        $(".open-menu-section").css("display", "block");
-
-        $("nav ul").hide();
-      });
-
-      $(window).resize(function () {
-        if ($(window).width() >= 1041) {
-
-          $("nav ul").show();
-        } else {
-          $("nav ul").hide();
-          $(".open-menu-section").css("display", "block");
-        }
-      });
-    });
-  </script>
-</body>
-
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </body>
 </html>
